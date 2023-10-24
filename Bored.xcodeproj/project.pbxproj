@@ -11,9 +11,10 @@
 		FC23A82D2AE3966900BDE4B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC23A82C2AE3966900BDE4B1 /* ContentView.swift */; };
 		FC23A82F2AE3966B00BDE4B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC23A82E2AE3966B00BDE4B1 /* Assets.xcassets */; };
 		FC23A8322AE3966B00BDE4B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC23A8312AE3966B00BDE4B1 /* Preview Assets.xcassets */; };
-		FC23A83C2AE3966B00BDE4B1 /* BoredTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC23A83B2AE3966B00BDE4B1 /* BoredTests.swift */; };
-		FC23A8462AE3966B00BDE4B1 /* BoredUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC23A8452AE3966B00BDE4B1 /* BoredUITests.swift */; };
-		FC23A8482AE3966B00BDE4B1 /* BoredUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC23A8472AE3966B00BDE4B1 /* BoredUITestsLaunchTests.swift */; };
+		FC23A8582AE396E600BDE4B1 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC23A8572AE396E600BDE4B1 /* Card.swift */; };
+		FC23A85A2AE39FF100BDE4B1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC23A8592AE39FF100BDE4B1 /* Colors.swift */; };
+		FC23A85C2AE3A4B100BDE4B1 /* CardsStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC23A85B2AE3A4B100BDE4B1 /* CardsStack.swift */; };
+		FC23A85F2AE3A64F00BDE4B1 /* CardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC23A85E2AE3A64F00BDE4B1 /* CardInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +41,11 @@
 		FC23A82E2AE3966B00BDE4B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC23A8312AE3966B00BDE4B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FC23A8372AE3966B00BDE4B1 /* BoredTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoredTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC23A83B2AE3966B00BDE4B1 /* BoredTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredTests.swift; sourceTree = "<group>"; };
 		FC23A8412AE3966B00BDE4B1 /* BoredUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoredUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC23A8452AE3966B00BDE4B1 /* BoredUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredUITests.swift; sourceTree = "<group>"; };
-		FC23A8472AE3966B00BDE4B1 /* BoredUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FC23A8572AE396E600BDE4B1 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		FC23A8592AE39FF100BDE4B1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		FC23A85B2AE3A4B100BDE4B1 /* CardsStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsStack.swift; sourceTree = "<group>"; };
+		FC23A85E2AE3A64F00BDE4B1 /* CardInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				FC23A8292AE3966900BDE4B1 /* Bored */,
-				FC23A83A2AE3966B00BDE4B1 /* BoredTests */,
-				FC23A8442AE3966B00BDE4B1 /* BoredUITests */,
 				FC23A8282AE3966900BDE4B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +94,9 @@
 		FC23A8292AE3966900BDE4B1 /* Bored */ = {
 			isa = PBXGroup;
 			children = (
+				FC23A85D2AE3A61F00BDE4B1 /* Resources */,
+				FC23A8552AE396C200BDE4B1 /* Models */,
+				FC23A8542AE396BD00BDE4B1 /* Views */,
 				FC23A82A2AE3966900BDE4B1 /* BoredApp.swift */,
 				FC23A82C2AE3966900BDE4B1 /* ContentView.swift */,
 				FC23A82E2AE3966B00BDE4B1 /* Assets.xcassets */,
@@ -110,21 +113,29 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		FC23A83A2AE3966B00BDE4B1 /* BoredTests */ = {
+		FC23A8542AE396BD00BDE4B1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FC23A83B2AE3966B00BDE4B1 /* BoredTests.swift */,
+				FC23A8572AE396E600BDE4B1 /* Card.swift */,
+				FC23A85B2AE3A4B100BDE4B1 /* CardsStack.swift */,
 			);
-			path = BoredTests;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		FC23A8442AE3966B00BDE4B1 /* BoredUITests */ = {
+		FC23A8552AE396C200BDE4B1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FC23A8452AE3966B00BDE4B1 /* BoredUITests.swift */,
-				FC23A8472AE3966B00BDE4B1 /* BoredUITestsLaunchTests.swift */,
+				FC23A8592AE39FF100BDE4B1 /* Colors.swift */,
+				FC23A85E2AE3A64F00BDE4B1 /* CardInfo.swift */,
 			);
-			path = BoredUITests;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FC23A85D2AE3A61F00BDE4B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +269,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC23A82D2AE3966900BDE4B1 /* ContentView.swift in Sources */,
+				FC23A85F2AE3A64F00BDE4B1 /* CardInfo.swift in Sources */,
+				FC23A85A2AE39FF100BDE4B1 /* Colors.swift in Sources */,
+				FC23A8582AE396E600BDE4B1 /* Card.swift in Sources */,
 				FC23A82B2AE3966900BDE4B1 /* BoredApp.swift in Sources */,
+				FC23A85C2AE3A4B100BDE4B1 /* CardsStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +281,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC23A83C2AE3966B00BDE4B1 /* BoredTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +288,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC23A8462AE3966B00BDE4B1 /* BoredUITests.swift in Sources */,
-				FC23A8482AE3966B00BDE4B1 /* BoredUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
