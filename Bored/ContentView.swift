@@ -8,7 +8,7 @@ struct ContentView: View {
                 .overlay(
                     VStack{
                         CardsStack()
-                })
+                    })
         }
     }
 }

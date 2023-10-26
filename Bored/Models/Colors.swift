@@ -7,4 +7,6 @@ struct Colors {
     let appBackground = Color(red: 249/255, green: 249/255, blue: 249/255)
     let titleColor = Color(red: 74/255, green: 74/255, blue: 74/255)
     let bodyColor = Color(red: 153/255, green: 153/255, blue: 153/255)
+    let buttonColor = Color(red: 157/255, green: 222/255, blue: 211/255)
+    let buttonLabelColor = Color(red: 19/255, green: 124/255, blue: 107/255)
 }

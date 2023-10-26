@@ -5,4 +5,5 @@ struct CardInfo: Identifiable, Hashable {
 
     let label: String
     let image: String
+    let activityType: String
 }
