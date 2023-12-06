@@ -1,6 +1,12 @@
 import SwiftUI
 
+// Essa View é a que exibe a lista de cards? Se sim, podemos chamar de ActivityListView.swift ou ActivityCategoriesView.swift
+// No fim das contas, estamos exibindo uma lista de atividades, certo?
 struct CardsStack: View {
+
+    // let activityRepository: ActitivyRepository 
+
+    // Esses itens poderiam ficar em uma classe separada.
     let items:[CardInfo]  = [
         CardInfo(label: "Random", image: "random", activityType: "random"),
         CardInfo(label: "Education", image: "education", activityType: "education"),
@@ -13,6 +19,10 @@ struct CardsStack: View {
         CardInfo(label: "Busy work", image: "busyWork", activityType: "busywork"),
         CardInfo(label: "Music", image: "music", activityType: "music")
     ]
+
+    // var items:[CardInfo] {
+    //     activityRepository.fetchActivities()
+    // }
 
     var body: some View {
         NavigationView{
