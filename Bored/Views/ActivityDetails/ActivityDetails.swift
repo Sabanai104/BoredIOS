@@ -1,9 +1,11 @@
 import SwiftUI
 
+// Quando a View representa uma tela, ou seja, não um componente, geralmente, colocamos o nome View no final.
+// ActivityDetailsView
 struct ActivityDetails: View {
     @StateObject private var viewModel = ViewModel()
     let activityType: String
-    let colors = Colors()
+    let colors = Colors() // Tornando Colors um enum com propriedades estáticas não precisaríamos dessa propriedade aqui
 
     var body: some View {
         VStack(alignment: .center, spacing: 40) {
