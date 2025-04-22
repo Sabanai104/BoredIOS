@@ -31,6 +31,12 @@ final class ViewModel {
         }
     }
 
+    func returnImage(activityTipe: String) -> String {
+        let randomNumber = Int.random(in: 1...2)
+
+        return "\(activityTipe+String(randomNumber))"
+    }
+    
     private func handleBoredInfos(boredInfos: [BoredAPI]) -> BoredAPI {
         if !boredInfos.isEmpty {
             return boredInfos.randomElement() ?? defaultBoredApi

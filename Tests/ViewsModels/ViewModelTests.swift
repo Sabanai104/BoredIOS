@@ -52,4 +52,17 @@ final class ViewModelTests: XCTestCase {
         XCTAssertEqual(viewState.boredInfo?.type, "relaxation")
         XCTAssertEqual(viewState.boredInfo?.activity, "Take your dog on a walk")
     }
+
+    func testReturnImage_whenSendType_shouldReturnImageType() {
+        // given
+        let service = BoredServiceSpy()
+        let viewState = ViewStateSpy()
+        let sut = ViewModel(service: service, viewState: viewState)
+
+        // when
+        let result = sut.returnImage(activityTipe: "education")
+
+        // then
+        XCTAssertTrue(result.contains("education"))
+    }
 }

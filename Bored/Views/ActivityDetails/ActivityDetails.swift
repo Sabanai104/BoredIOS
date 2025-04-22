@@ -11,7 +11,7 @@ struct ActivityDetails: View {
 
     var body: some View {
         VStack(alignment: .center, spacing: 40) {
-            let image = ActivityDetail().returnImage(activityTipe: validate)
+            let image = viewModel.returnImage(activityTipe: validate)
             Image(image)
                 .resizable()
                 .frame(width: 241, height: 123)
