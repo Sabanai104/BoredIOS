@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E6340E3C2DB750BE00A822A8 /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6340E3B2DB750BA00A822A8 /* ViewModelTests.swift */; };
+		E6340E3E2DB7517E00A822A8 /* BoredServiceSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6340E3D2DB7517000A822A8 /* BoredServiceSpy.swift */; };
+		E6340E402DB753C200A822A8 /* ViewStateSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6340E3F2DB753C000A822A8 /* ViewStateSpy.swift */; };
+		E67C0EC02DB72EA600512DFB /* BoredService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C0EBF2DB72EA200512DFB /* BoredService.swift */; };
+		E67C0EC22DB7354100512DFB /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C0EC12DB7353F00512DFB /* ViewState.swift */; };
+		E67C0EC42DB737CF00512DFB /* BoredFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C0EC32DB737CA00512DFB /* BoredFactory.swift */; };
+		E67C0ECA2DB747C800512DFB /* BoredServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C0EC92DB747BD00512DFB /* BoredServiceTests.swift */; };
+		E67C0ECD2DB7492B00512DFB /* SessionSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C0ECC2DB7492500512DFB /* SessionSpy.swift */; };
+		E67C0ED02DB749DF00512DFB /* URLProtocolSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C0ECF2DB749D900512DFB /* URLProtocolSpy.swift */; };
 		FC23A82B2AE3966900BDE4B1 /* BoredApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC23A82A2AE3966900BDE4B1 /* BoredApp.swift */; };
 		FC23A82D2AE3966900BDE4B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC23A82C2AE3966900BDE4B1 /* ContentView.swift */; };
 		FC23A82F2AE3966B00BDE4B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC23A82E2AE3966B00BDE4B1 /* Assets.xcassets */; };
@@ -29,23 +38,24 @@
 			remoteGlobalIDString = FC23A8262AE3966900BDE4B1;
 			remoteInfo = Bored;
 		};
-		FC23A8422AE3966B00BDE4B1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FC23A81F2AE3966900BDE4B1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FC23A8262AE3966900BDE4B1;
-			remoteInfo = Bored;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E6340E3B2DB750BA00A822A8 /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
+		E6340E3D2DB7517000A822A8 /* BoredServiceSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredServiceSpy.swift; sourceTree = "<group>"; };
+		E6340E3F2DB753C000A822A8 /* ViewStateSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStateSpy.swift; sourceTree = "<group>"; };
+		E67C0EBF2DB72EA200512DFB /* BoredService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredService.swift; sourceTree = "<group>"; };
+		E67C0EC12DB7353F00512DFB /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		E67C0EC32DB737CA00512DFB /* BoredFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredFactory.swift; sourceTree = "<group>"; };
+		E67C0EC92DB747BD00512DFB /* BoredServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredServiceTests.swift; sourceTree = "<group>"; };
+		E67C0ECC2DB7492500512DFB /* SessionSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSpy.swift; sourceTree = "<group>"; };
+		E67C0ECF2DB749D900512DFB /* URLProtocolSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolSpy.swift; sourceTree = "<group>"; };
 		FC23A8272AE3966900BDE4B1 /* Bored.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bored.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC23A82A2AE3966900BDE4B1 /* BoredApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredApp.swift; sourceTree = "<group>"; };
 		FC23A82C2AE3966900BDE4B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FC23A82E2AE3966B00BDE4B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC23A8312AE3966B00BDE4B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FC23A8372AE3966B00BDE4B1 /* BoredTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoredTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC23A8412AE3966B00BDE4B1 /* BoredUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoredUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC23A8572AE396E600BDE4B1 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		FC23A8592AE39FF100BDE4B1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		FC23A85B2AE3A4B100BDE4B1 /* CardsStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsStack.swift; sourceTree = "<group>"; };
@@ -71,20 +81,59 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC23A83E2AE3966B00BDE4B1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E6340E3A2DB750B400A822A8 /* ViewsModels */ = {
+			isa = PBXGroup;
+			children = (
+				E6340E3B2DB750BA00A822A8 /* ViewModelTests.swift */,
+			);
+			path = ViewsModels;
+			sourceTree = "<group>";
+		};
+		E67C0EBE2DB72E8500512DFB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E67C0EBF2DB72EA200512DFB /* BoredService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E67C0EC52DB747A100512DFB /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E6340E3A2DB750B400A822A8 /* ViewsModels */,
+				E67C0ECB2DB7491F00512DFB /* Spy */,
+				E67C0EC72DB747AF00512DFB /* Services */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E67C0EC72DB747AF00512DFB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E67C0EC92DB747BD00512DFB /* BoredServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E67C0ECB2DB7491F00512DFB /* Spy */ = {
+			isa = PBXGroup;
+			children = (
+				E6340E3F2DB753C000A822A8 /* ViewStateSpy.swift */,
+				E6340E3D2DB7517000A822A8 /* BoredServiceSpy.swift */,
+				E67C0ECF2DB749D900512DFB /* URLProtocolSpy.swift */,
+				E67C0ECC2DB7492500512DFB /* SessionSpy.swift */,
+			);
+			path = Spy;
+			sourceTree = "<group>";
+		};
 		FC23A81E2AE3966900BDE4B1 = {
 			isa = PBXGroup;
 			children = (
 				FC23A8292AE3966900BDE4B1 /* Bored */,
+				E67C0EC52DB747A100512DFB /* Tests */,
 				FC23A8282AE3966900BDE4B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,7 +143,6 @@
 			children = (
 				FC23A8272AE3966900BDE4B1 /* Bored.app */,
 				FC23A8372AE3966B00BDE4B1 /* BoredTests.xctest */,
-				FC23A8412AE3966B00BDE4B1 /* BoredUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,11 +150,13 @@
 		FC23A8292AE3966900BDE4B1 /* Bored */ = {
 			isa = PBXGroup;
 			children = (
+				E67C0EBE2DB72E8500512DFB /* Services */,
 				FC48310A2AE83A3800939972 /* ViewsModels */,
 				FC23A8552AE396C200BDE4B1 /* Models */,
 				FC23A8542AE396BD00BDE4B1 /* Views */,
 				FC23A82A2AE3966900BDE4B1 /* BoredApp.swift */,
 				FC23A82C2AE3966900BDE4B1 /* ContentView.swift */,
+				E67C0EC32DB737CA00512DFB /* BoredFactory.swift */,
 				FC23A82E2AE3966B00BDE4B1 /* Assets.xcassets */,
 				FC23A8302AE3966B00BDE4B1 /* Preview Content */,
 			);
@@ -161,6 +211,7 @@
 		FC48310A2AE83A3800939972 /* ViewsModels */ = {
 			isa = PBXGroup;
 			children = (
+				E67C0EC12DB7353F00512DFB /* ViewState.swift */,
 				FC48310B2AE83A4500939972 /* ViewModel.swift */,
 			);
 			path = ViewsModels;
@@ -204,24 +255,6 @@
 			productReference = FC23A8372AE3966B00BDE4B1 /* BoredTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FC23A8402AE3966B00BDE4B1 /* BoredUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FC23A8512AE3966B00BDE4B1 /* Build configuration list for PBXNativeTarget "BoredUITests" */;
-			buildPhases = (
-				FC23A83D2AE3966B00BDE4B1 /* Sources */,
-				FC23A83E2AE3966B00BDE4B1 /* Frameworks */,
-				FC23A83F2AE3966B00BDE4B1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FC23A8432AE3966B00BDE4B1 /* PBXTargetDependency */,
-			);
-			name = BoredUITests;
-			productName = BoredUITests;
-			productReference = FC23A8412AE3966B00BDE4B1 /* BoredUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -236,10 +269,6 @@
 						CreatedOnToolsVersion = 15.0;
 					};
 					FC23A8362AE3966B00BDE4B1 = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = FC23A8262AE3966900BDE4B1;
-					};
-					FC23A8402AE3966B00BDE4B1 = {
 						CreatedOnToolsVersion = 15.0;
 						TestTargetID = FC23A8262AE3966900BDE4B1;
 					};
@@ -260,7 +289,6 @@
 			targets = (
 				FC23A8262AE3966900BDE4B1 /* Bored */,
 				FC23A8362AE3966B00BDE4B1 /* BoredTests */,
-				FC23A8402AE3966B00BDE4B1 /* BoredUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -282,13 +310,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC23A83F2AE3966B00BDE4B1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -296,7 +317,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E67C0EC02DB72EA600512DFB /* BoredService.swift in Sources */,
 				FC23A82D2AE3966900BDE4B1 /* ContentView.swift in Sources */,
+				E67C0EC42DB737CF00512DFB /* BoredFactory.swift in Sources */,
+				E67C0EC22DB7354100512DFB /* ViewState.swift in Sources */,
 				FC48310C2AE83A4500939972 /* ViewModel.swift in Sources */,
 				FC23A85F2AE3A64F00BDE4B1 /* CardInfo.swift in Sources */,
 				FC23A85A2AE39FF100BDE4B1 /* Colors.swift in Sources */,
@@ -313,13 +337,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FC23A83D2AE3966B00BDE4B1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				E67C0ECA2DB747C800512DFB /* BoredServiceTests.swift in Sources */,
+				E6340E3E2DB7517E00A822A8 /* BoredServiceSpy.swift in Sources */,
+				E67C0ECD2DB7492B00512DFB /* SessionSpy.swift in Sources */,
+				E6340E3C2DB750BE00A822A8 /* ViewModelTests.swift in Sources */,
+				E67C0ED02DB749DF00512DFB /* URLProtocolSpy.swift in Sources */,
+				E6340E402DB753C200A822A8 /* ViewStateSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,11 +353,6 @@
 			isa = PBXTargetDependency;
 			target = FC23A8262AE3966900BDE4B1 /* Bored */;
 			targetProxy = FC23A8382AE3966B00BDE4B1 /* PBXContainerItemProxy */;
-		};
-		FC23A8432AE3966B00BDE4B1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FC23A8262AE3966900BDE4B1 /* Bored */;
-			targetProxy = FC23A8422AE3966B00BDE4B1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -466,6 +484,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bored/Preview Content\"";
+				DEVELOPMENT_TEAM = 6367ZH4ZBS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -494,6 +513,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bored/Preview Content\"";
+				DEVELOPMENT_TEAM = 6367ZH4ZBS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -552,40 +572,6 @@
 			};
 			name = Release;
 		};
-		FC23A8522AE3966B00BDE4B1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sabanai.BoredUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Bored;
-			};
-			name = Debug;
-		};
-		FC23A8532AE3966B00BDE4B1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sabanai.BoredUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Bored;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -612,15 +598,6 @@
 			buildConfigurations = (
 				FC23A84F2AE3966B00BDE4B1 /* Debug */,
 				FC23A8502AE3966B00BDE4B1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FC23A8512AE3966B00BDE4B1 /* Build configuration list for PBXNativeTarget "BoredUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FC23A8522AE3966B00BDE4B1 /* Debug */,
-				FC23A8532AE3966B00BDE4B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

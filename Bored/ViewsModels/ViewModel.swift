@@ -1,29 +1,54 @@
 import Foundation
 
-class ViewModel: ObservableObject {
-    @Published var boredAPI: BoredAPI?
+final class ViewModel {
+    private let service: BoredServicing
+    private let viewState: any ViewStateProtocol
 
-    func fetch(type: String){
-        boredAPI = nil
-        guard let url = URL(string:"https://www.boredapi.com/api/activity?type=\(type)") else {return}
+    let defaultBoredApi = BoredAPI(
+        activity: "Take your dog on a walk",
+        type: "relaxation",
+        participants: 0,
+        price: 0.0,
+        accessibility: "Few to no challenges",
+        link: "",
+        key: ""
+    )
 
-        let task = URLSession.shared.dataTask(with: url) {
-            [weak self] data, _,error in
-            guard let data = data, error == nil else {
-                print(error)
-                return
-            }
+    init(service: BoredServicing, viewState: any ViewStateProtocol) {
+        self.service = service
+        self.viewState = viewState
+    }
 
+    func fetch(type: String) {
+        Task {
             do {
-                let boredAPI = try JSONDecoder().decode(BoredAPI.self, from: data)
-                DispatchQueue.main.async {
-                    self?.boredAPI = boredAPI
-                }
-            }
-            catch {
-                print(error)
+                let result = try await service.fetch(type: type)
+                let boredInfo = handleBoredInfos(boredInfos: result)
+                await presentBoredInfo(boredInfo: boredInfo)
+            } catch {
+                await presentError(error)
             }
         }
-        task.resume()
+    }
+
+    private func handleBoredInfos(boredInfos: [BoredAPI]) -> BoredAPI {
+        if !boredInfos.isEmpty {
+            return boredInfos.randomElement() ?? defaultBoredApi
+        } else {
+            return defaultBoredApi
+        }
+    }
+}
+
+@MainActor
+extension ViewModel {
+    private func presentBoredInfo(boredInfo: BoredAPI) {
+        viewState.boredInfo = boredInfo
+        print(viewState.boredInfo ?? "")
+    }
+
+    private func presentError(_ error: Error) {
+        print(error.localizedDescription)
+        viewState.boredInfo = defaultBoredApi
     }
 }

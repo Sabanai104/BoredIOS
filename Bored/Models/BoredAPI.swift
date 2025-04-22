@@ -1,11 +1,11 @@
 import Foundation
 
-struct BoredAPI: Hashable, Codable {
+public struct BoredAPI: Hashable, Codable {
     let activity: String
     let type: String
     let participants: Int
     let price: Double
-    let accessibility: Double
+    let accessibility: String
     let link: String
     let key: String
 }

@@ -14,6 +14,10 @@ struct CardsStack: View {
         CardInfo(label: "Music", image: "music", activityType: "music")
     ]
 
+    func activityDetails(activityType: String) -> ActivityDetails {
+        return BoredFactory().make(activityType: activityType)
+    }
+
     var body: some View {
         NavigationView{
             ScrollView {
@@ -33,7 +37,7 @@ struct CardsStack: View {
                     LazyVGrid(columns: [GridItem(.flexible(), spacing: 20), GridItem(.flexible())], spacing: 20) {
                         ForEach(items, id: \.self) { item in
                             NavigationLink{
-                                ActivityDetails(activityType: item.activityType)
+                                activityDetails(activityType: item.activityType)
                             } label: {
                                 Card(label: item.label, image: item.image)
                             }
@@ -52,6 +56,6 @@ struct CardsStack: View {
     }
 }
 
-#Preview {
-    CardsStack()
-}
+//#Preview {
+//    CardsStack()
+//}
